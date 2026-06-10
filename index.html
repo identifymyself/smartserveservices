@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smartserve Services — Pay MY Bill</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: #fff;
+  color: #000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  background: #1d4ed8;
+}
+
+/* Sections */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Image Sections */
+.image-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: background-size 5s ease;
+}
+
+.image-section:hover {
+  background-size: 110%;
+}
+
+.image-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.4)
+  );
+}
+
+/* Content */
+.content {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  z-index: 2;
+}
+
+/* Floating effect (light) */
+.content h1 {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Fade animation */
+.fade {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.line {
+  width: 150px;
+  height: 3px;
+  background: #fff;
+  margin: 15px auto;
+}
+
+/* Footer */
+footer {
+  background: #ab1400;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* Bottom */
+.bottom-box {
+  background: #54c3bd;
+  color: #000;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width:768px){
+  .section {padding: 40px 15px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="#">Home</a>
+  <a class="btn" href="tel:+12892663481">Contact Us</a>
+</header>
+
+<!-- HERO -->
+<div class="section image-section" style="background-image:url('images/image101.jpg');">
+  <div class="content fade">
+    <h2>(289) 266- 3481</h2>
+    <h3>Smartserve Services</h3>
+    <div class="line"></div>
+    <h2>Customer Support Team</h2>
+    <h1>Your Trusted Customer <br> Support , Smartserve<br> Services</h1>
+    <br>
+    <a class="btn" href="tel:+12892663481">Contact Us</a>
+  </div>
+</div>
+
+<!-- imab -->
+<div class="section image-section" style="background-image:url('images/imab.jpg');">
+  <div class="content fade">
+    <h2>Quick and Reliable Help with Your Phone & Internet Bill.</h2>
+  </div>
+</div>
+
+<!-- About -->
+<div class="section image-section" style="background-image:url('images/imac.avif');">
+  <div class="content fade">
+    <h3>About Us</h3>
+    <div class="line"></div>
+    <p>
+      At Smartserve Services, integrity, transparency, and excellence guide everything we do. 
+      We strive to create a collaborative environment where innovation flourishes 
+      and our clients receive the highest quality service.
+    </p>
+    <a class="btn" href="tel:+12892663481">Learn More</a>
+  </div>
+</div>
+
+<!-- Why Choose Us -->
+<div class="section image-section" style="background-image:url('images/imad.jpg');">
+  <div class="content fade">
+
+    <h1>Why Choose Us</h1>
+
+    <h3>Industry Expertise:</h3>
+    <p>With extensive experience in the BPO sector, we understand the evolving demands of internet services and deliver solutions that follow industry best practices.</p>
+
+    <h3>Scalable Solutions:</h3>
+    <p>From startups to established enterprises, our solutions scale with your business, adapting to growth and market changes seamlessly.</p>
+
+    <h3>Technology Integration:</h3>
+    <p>We leverage advanced technologies and robust infrastructure to streamline processes, improve efficiency, and reduce costs.</p>
+
+    <h3>Customer-Centric Approach:</h3>
+    <p>Our focus is on building strong customer relationships, ensuring every interaction reflects your brand values and fosters loyalty.</p>
+
+    <a class="btn" href="tel:+12892663481">Learn More</a>
+
+  </div>
+</div>
+
+<!-- Services -->
+<div class="section image-section" style="background-image:url('images/imae.jpg');">
+  <div class="content fade">
+
+    <h1>Our Services</h1>
+
+    <h3>Customer Support:</h3>
+    <p>Our team is available 24/7 to help with questions and technical problems. We focus on fast solutions and friendly support.</p>
+
+    <h3>Technical Assistance:</h3>
+    <p>We help with troubleshooting and give advice for internet service issues. Our team is ready to solve different technical problems.</p>
+
+    <h3>Sales Support:</h3>
+    <p>We help improve sales by finding new leads, increasing conversions, and keeping customers happy in a competitive market.</p>
+
+    <h3>Back Office Solutions:</h3>
+    <p>We handle tasks like data entry, order processing, and billing, so you can focus on running your business smoothly.</p>
+
+    <a class="btn" href="tel:+12892663481">Learn More</a>
+
+  </div>
+</div>
+
+<!-- Vision -->
+<div class="section image-section" style="background-image:url('images/imaf.png');">
+  <div class="content fade">
+
+    <h1>Our Vision</h1>
+
+    <p>
+      We strive to support businesses in the internet services industry by delivering high-quality BPO customer service. Our goal is to make customer interactions smoother, faster, and more reliable.
+    </p>
+
+    <h3>Better Customer Experiences:</h3>
+    <p>We provide friendly and helpful support to ensure every customer interaction is positive and efficient.</p>
+
+    <h3>Efficient Processes:</h3>
+    <p>By using modern technology and smart workflows, we help businesses save time and operate more effectively.</p>
+
+    <h3>Strong Partnerships:</h3>
+    <p>We build lasting relationships with our clients based on trust, reliability, and teamwork.</p>
+
+    <a class="btn" href="tel:+12892663481">Learn More</a>
+
+  </div>
+</div>
+
+<!-- Bottom -->
+<div class="bottom-box">
+  <h1>
+    YASMEEN MUHAMMAD AKRAM GROUP LIMITED owns the website and<br>
+    services offered here
+  </h1>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>
+    This website belongs to an authorized marketing partner of the project.  
+    The company reserves the right to add, alter, or delete any material from the website at any time.  
+    We are not mimicking any other site. We are an official sales partner.
+  </p>
+
+  <p>Phone: <a href="tel:+12892663481">(289) 266- 3481</a></p>
+  <p>Email: contact@Smartserveservices.online </p>
+   <p>Email: contact.fastxbillers@gmail.com </p>
+  <p>Copyright © 2026 Smartserve Services</p>
+
+  <a href="privacy.html">Privacy Policy</a>
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade');
+
+function showOnScroll() {
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (top < windowHeight - 100) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', showOnScroll);
+window.addEventListener('load', showOnScroll);
+</script>
+
+</body>
+</html>
